@@ -58,8 +58,8 @@ snake=Snake()
 apple=Apple()
 while True:
     for event in pygame.event.get():
-        if event.type==pygame.quit:
-            pygame.quit()
+        if event.type==pygame.QUIT:
+            pygame.QUIT
             sys.exit()
         if event.type==pygame.KEYDOWN:
             if event.key==pygame.K_DOWN:
